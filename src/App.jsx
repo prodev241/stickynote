@@ -1,11 +1,22 @@
-import Component from './components/component.jsx';
-function App() {
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Layout from "./Layout.jsx";
+// import { Component } from "react";
+import Component from './components/component.jsx'
+import ViewAll from "./pages/ViewAll.jsx";
 
+function App() {
   return (
     <>
- <Component />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Component />} />
+             <Route path="view" element={<ViewAll />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

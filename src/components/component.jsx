@@ -1,6 +1,7 @@
 import { useState } from "react";
 import StickyNotes from "./stickyNotes";
-const component = () => {
+import { Link } from "react-router-dom";
+const Component = () => {
   const [input, setInput] = useState("");
   const [notes, setNotes] = useState([]);
   console.log(notes);
@@ -33,11 +34,17 @@ const component = () => {
               Add Note
             </button>
           </div>
+
           <StickyNotes notes={notes} setNotes={setNotes} />
+          <Link to="view">
+            <div className="text-amber-700  hover:text-amber-800 pt-2">
+              <button className="underline">Veiw All</button>
+            </div>
+          </Link>
         </div>
       </div>
     </>
   );
 };
 
-export default component;
+export default Component;
