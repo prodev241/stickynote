@@ -21,7 +21,7 @@ const Component = () => {
               placeholder="Add a note"
             />
             <button
-              className="bg-amber-600 text-white px-4 py-2 rounded hover:bg-amber-700 transition-colors duration-300 text-[14px] whitespace-nowrap h-[44px] "
+               className="bg-amber-600 text-white px-4 py-2 rounded hover:bg-amber-700  text-[14px] whitespace-nowrap h-[44px]"
               onClick={() => {
                 if (input.trim() !== "") {
                   setNotes((prevNotes) => {
