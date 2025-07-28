@@ -8,7 +8,7 @@ const Component = () => {
   return (
     <>
       <div className="flex flex-col items-center justify-center h-screen bg-gray-300">
-        <div className="bg-white p-6 rounded border-1 border-amber-600 border-t-amber-200 border-b-amber-400 shadow-md w-[700px] bg">
+        <div className="bg-white p-6 rounded border-1 border-amber-600 border-t-amber-200 border-b-amber-400 shadow-xl/30 w-[700px] bg">
           <h1 className="text-center font-bold mb-4 text-amber-500">
             Notes App
           </h1>

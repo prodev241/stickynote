@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Layout from "./Layout.jsx";
+import Layout from "./pages/Layout.jsx";
 // import { Component } from "react";
 import Component from './components/component.jsx'
 import ViewAll from "./pages/ViewAll.jsx";
