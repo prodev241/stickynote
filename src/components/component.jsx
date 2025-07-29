@@ -34,7 +34,6 @@ const Component = () => {
               Add Note
             </button>
           </div>
-
           <StickyNotes notes={notes} setNotes={setNotes} />
           <Link to="view">
             <div className="text-amber-700  hover:text-amber-800 pt-2">
