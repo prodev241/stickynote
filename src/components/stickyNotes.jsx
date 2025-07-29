@@ -6,7 +6,7 @@ const StickyNotes = ({ notes, setNotes }) => {
     <ul className="grid grid-cols-3 gap-4 mt-4 ">
       {notes.map((note, index) => (
         <li
-          className="relative bg-amber-100 rounded border-amber-600 border-t-amber-200 border-b-amber-400 w-[200px] h-[190px] p-2"
+          className="relative bg-amber-100 rounded border-amber-600 border-t-amber-200 border-b-amber-400 w-[200px] h-[190px] p-2 shadow-xl"
           key={index}
         >
           {`${index + 1} ${note} `}
@@ -36,3 +36,4 @@ const StickyNotes = ({ notes, setNotes }) => {
 };
 
 export default StickyNotes;
+        
